@@ -67,5 +67,4 @@ func _exit_tree() -> void:
 	for action in input_Keys:
 		if InputMap.has_action(action):
 			InputMap.erase_action(action)
-	# Vaciamos el array por si acaso
 	input_Keys.clear()
