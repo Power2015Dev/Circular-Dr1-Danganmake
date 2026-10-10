@@ -3,9 +3,14 @@ extends CanvasLayer
 # HERE YOU CAN START CREATING YOUR MINIGAME
 # WARNING: DO NOT USE OPERATING SYSTEM FUNCTIONS OR HTTP REQUESTS.
 
+var input_Keys : Array = []
+
 func _ready() -> void:
 	# Use _ready to declare which parameters are usable in the editor.
 	# Editor_Parameters(true, false, false, false, true, false, false, false)
+	# You can also add your own input maps here.
+	# Custom_key("move_forwards", KEY_W)
+	# Custom_Mouse_key("shoot", MOUSE_BUTTON_LEFT)
 	pass
 
 func Editor_Parameters(
@@ -34,6 +39,33 @@ func Start_Minigame():
 	pass
 
 func Win():
+	for actions in input_Keys:
+		if InputMap.has_action(actions):
+			InputMap.erase_action(actions)
+	
 	GlobalStates.Player_won.emit()
 func Lose():
 	GlobalStates.Player_loss.emit()
+
+func Custom_key(action: String, key: Key) -> void:
+	if not InputMap.has_action(action):
+		InputMap.add_action(action)
+		var evento = InputEventKey.new()
+		evento.keycode = key
+		input_Keys.append(action)
+		InputMap.action_add_event(action, evento)
+
+func Custom_Mouse_key(action : String, MouseEvent: MouseButton) -> void:
+	if not InputMap.has_action(action):
+		InputMap.add_action(action)
+		var evento = InputEventMouseButton.new()
+		evento.button_index = MouseEvent
+		input_Keys.append(action)
+		InputMap.action_add_event(action, evento)
+
+func _exit_tree() -> void:
+	for action in input_Keys:
+		if InputMap.has_action(action):
+			InputMap.erase_action(action)
+	# Vaciamos el array por si acaso
+	input_Keys.clear()
