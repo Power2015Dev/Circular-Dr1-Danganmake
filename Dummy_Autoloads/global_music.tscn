@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d3x2s16rxh6u2"]
+
+[ext_resource type="Script" uid="uid://c43vb80hpbr3t" path="res://Dummy_Autoloads/global_sound.gd" id="1_1j2st"]
+
+[node name="global_sound" type="Node" unique_id=81862104]
+script = ExtResource("1_1j2st")
+
+[node name="MUSIC" type="AudioStreamPlayer" parent="." unique_id=1941070385]
+bus = &"Music"
+
+[node name="SFX" type="AudioStreamPlayer" parent="." unique_id=1167291390]
+volume_db = 5.0
+bus = &"SFX"
+
+[node name="voice" type="AudioStreamPlayer" parent="." unique_id=1150425446]
+volume_db = 5.0
+bus = &"Voice"

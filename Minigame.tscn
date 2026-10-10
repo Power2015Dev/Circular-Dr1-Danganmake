@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://rkrtdl2j5hpm"]
+
+[ext_resource type="Script" uid="uid://moqhqhpao4ad" path="res://minigame.gd" id="1_26mrl"]
+
+[node name="Minigame" type="CanvasLayer" unique_id=855698764]
+layer = 20
+script = ExtResource("1_26mrl")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=731040668]
