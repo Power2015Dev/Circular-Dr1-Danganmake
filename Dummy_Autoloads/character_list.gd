@@ -30,6 +30,9 @@ signal FullScreen_afterimage
 signal Orange_in
 signal Orange_out
 
+signal hide_courtroom
+signal show_courtroom
+
 func focus_CH(char_name: String, fov: int = 50, speed: float = 0.2): 
 	request_camera_focus.emit(char_name, fov, speed)
 func focus_CH_zoom_in_rotated(char_name: String, fov: int = 50, duration: float = 5.0, angle : float = -15.0, Z_Pos : float = 1.8, Y_Rot : float = 0, speed : float = 0.0): 
@@ -73,3 +76,8 @@ func fade_out(time: float):
 	pass
 func fullscreen_afterimage():
 	FullScreen_afterimage.emit()
+
+func Hide_Courtroom():
+	hide_courtroom.emit()
+func Show_Courtroom():
+	show_courtroom.emit()
