@@ -1,4 +1,4 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://xfynrg3vnx5u"]
 
 [ext_resource type="Script" uid="uid://moqhqhpao4ad" path="res://RenameToYourMinigame/minigame.gd" id="1_26mrl"]
 

@@ -1,7 +1,7 @@
 extends Node
 
 signal Player_won
-signal Player_loss
+signal Player_lose
 # maximum is 100 and minimun is 0.0
 signal Hurt(Damage_taken : float)
 
@@ -19,7 +19,7 @@ func Play_iSee():
 	# await instance.Play()
 	pass
 	
-func Play_iSee_char_selection(char : String):
+func Play_iSee_char_selection(char : String = ""):
 	# its almost the same the diference here it is not exclusive to the main character
 	# you can apply it to any character.
 	# it is an asynchronous function.
@@ -30,10 +30,15 @@ func Play_Counter(character : String = ""):
 	# it is an asynchronous function.
 	pass
 	
-func Play_Consent(main_char : String, secondary_char : String):
+func Play_Consent(main_char : String = "", secondary_char : String = ""):
 	# This will instantiate the Consent Screen to display it
 	# it is an asynchronous function.
 	pass
+
+# This will return the current location of your trial in Danganmake.
+func get_trial_location() -> String:
+	return ""
+	
 func Show_Health_bar():
 	pass
 func Hide_Health_bar():
