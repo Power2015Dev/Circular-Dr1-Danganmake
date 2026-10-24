@@ -3,16 +3,17 @@
 
 This is a template you can use to inject your own DanganMake minigames.
 
+Even though the template is designed with minigames in mind, you aren’t strictly limited to that your imagination allows you to create any events you’d like, whether for an intro or a trial.
 
 ## WARNING
 
 Under no circumstances should you use operating system functions or HTTP requests.
 
-Instead, when creating your own mini-game, make it open-source and provide the download via the "Releases" section.
+Be aware of malware; if you suspect that a .pck file from a creator contains malware, DO NOT INSTALL IT, and report it on the official Discord.
 
-If you share your mini-game on the Discord server and it is not open-source or if it uses HTTP functions or anything that modifies the operating system in any way.
+We recommend that you upload your minigame as open-source code on GitHub to avoid such issues.
 
-## You will be permanently banned.
+## Please be mindful of what you do. 
 
 
 

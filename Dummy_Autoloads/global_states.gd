@@ -38,7 +38,25 @@ func Play_Consent(main_char : String = "", secondary_char : String = ""):
 # This will return the current location of your trial in Danganmake.
 func get_trial_location() -> String:
 	return ""
-	
+# This will return the amounts, name y path of your truthbullets
+func get_truth_bullets() -> Dictionary:
+	# example of how the game will give you the data
+	#dic = {
+		#base_name + "_path": txt_path,
+		#base_name + "_Image": img_path,
+		#"truth_bullets_names": {
+			#"NAME_1",
+			#"NAME_2",
+			#"NAME_3",
+			#"NAME_4",
+		#}
+		  #}
+	return {}
+
+# return current health in the health bar
+func get_Health() -> float:
+	return 0.0
+
 func Show_Health_bar():
 	pass
 func Hide_Health_bar():

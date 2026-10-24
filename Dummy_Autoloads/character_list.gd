@@ -1,4 +1,8 @@
 extends Node
+
+# This is the autoload that runs everything in the trial scene
+
+
 #This dictionary contains all the characters who are on the scene 
 # and their emotions.
 #"Hajime Hinata": {
@@ -15,6 +19,7 @@ var character_in_scene : Dictionary = {}
 # This dictionary contains the 3D node of each instantiated character.
 var character_in_scene_active_3D: Dictionary = {}
 
+signal request_custom_focus(path: String, ch_name: String, custom_data: Dictionary)
 signal request_camera_focus(char_name: String, fov: int, speed: float)
 signal request_camera_zoom_in_rotated(char_name: String, fov: int, duration: float, angle : float, Z_Pos : float, Y_Rot : float, speed : float)
 signal request_camera_zoom_out_rotated(char_name: String, fov: int, duration: float, angle : float, Z_Pos : float, Y_Rot : float, speed : float)
@@ -33,6 +38,8 @@ signal Orange_out
 signal hide_courtroom
 signal show_courtroom
 
+func focus_CH_Custom(path: String, ch_name: String, custom_data: Dictionary = {}):
+	request_custom_focus.emit(path, ch_name, custom_data)
 func focus_CH(char_name: String, fov: int = 50, speed: float = 0.2): 
 	request_camera_focus.emit(char_name, fov, speed)
 func focus_CH_zoom_in_rotated(char_name: String, fov: int = 50, duration: float = 5.0, angle : float = -15.0, Z_Pos : float = 1.8, Y_Rot : float = 0, speed : float = 0.0): 
@@ -81,3 +88,20 @@ func Hide_Courtroom():
 	hide_courtroom.emit()
 func Show_Courtroom():
 	show_courtroom.emit()
+
+func Hide_all_in_Courtroom():
+	hide_courtroom.emit()
+	
+	if character_in_scene_active_3D.is_empty():
+		return
+		
+	for characters in character_in_scene_active_3D:
+		characters.visible = false
+func Show_all_in_Courtroom():
+	show_courtroom.emit()
+	
+	if character_in_scene_active_3D.is_empty():
+		return
+		
+	for characters in character_in_scene_active_3D:
+		characters.visible = true 

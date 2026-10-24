@@ -27,6 +27,7 @@ buses/default_bus_layout="uid://dsns2ia6mch1f"
 GlobalSound="*uid://d3x2s16rxh6u2"
 GlobalStates="*uid://bek63pm0qn818"
 CharacterList="*uid://51elas1bgkhd"
+CharacterScript="*uid://c5huvluu0iitq"
 
 [display]
 
