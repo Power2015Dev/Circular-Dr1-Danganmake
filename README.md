@@ -5,6 +5,10 @@ This is a template you can use to inject your own DanganMake minigames.
 
 Even though the template is designed with minigames in mind, you aren’t strictly limited to that your imagination allows you to create any events you’d like, whether for an intro or a trial.
 
+If you encounter an issue where minigames fail to load, check whether it’s caused by duplicate UIDs. You can resolve this by deleting the `.uid` file and removing the UID path found within the `.tscn` file, located next to `type="Script"`.
+
+To prevent such errors, always clone the repository when creating a new minigame, rather than copying an existing one you’ve already built.
+
 ## WARNING
 
 Under no circumstances should you use operating system functions or HTTP requests.
