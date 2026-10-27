@@ -5,10 +5,16 @@ extends CanvasLayer
 
 var input_Keys : Array = []
 
+var persistent_state : bool = false
+
 func _ready() -> void:
 	# You can add your own input maps here.
 	# Custom_key("move_forwards", KEY_W)
 	# Custom_Mouse_key("shoot", MOUSE_BUTTON_LEFT)
+	
+	# if you make persistent_state = true
+	# it wont' destroy the scene after you emit the Player_won signal
+	# useful for HUD things that you want to make it stay 
 	pass
 
 func Start_Minigame(param : Dictionary):
