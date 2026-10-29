@@ -100,6 +100,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1913604775]
+visible = false
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_aqtl2")

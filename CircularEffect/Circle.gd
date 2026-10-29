@@ -5,7 +5,7 @@ extends CanvasLayer
 
 var input_Keys : Array = []
 
-var persistent_state : bool = false
+var persistent_state : bool = true
 
 func _ready() -> void:
 	# You can add your own input maps here.
@@ -20,7 +20,14 @@ func _ready() -> void:
 func Start_Minigame(param : Dictionary):
 	# Don't declare start_minigame() in _ready 
 	# unless you are testing the minigame itself.
-	pass
+	call_deferred("Win")
+	var paused_balloon = null
+	var active_balloons = get_tree().get_nodes_in_group("dialogue_balloon")
+	
+	if active_balloons.size() > 0:
+		paused_balloon = active_balloons[0]
+		paused_balloon.tree_exiting.connect(_on_tree_exiting)
+	
 
 func Win():
 	# deleting the inputs you declared after win
@@ -53,3 +60,6 @@ func _exit_tree() -> void:
 		if InputMap.has_action(action):
 			InputMap.erase_action(action)
 	input_Keys.clear()
+
+func _on_tree_exiting():
+	self.queue_free()
