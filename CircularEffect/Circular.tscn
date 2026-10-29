@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://xfynrg3vnx5u"]
+
+[ext_resource type="Script" uid="uid://bjwdyah0k12yu" path="res://CircularEffect/Circle.gd" id="1_26mrl"]
+[ext_resource type="Texture2D" uid="uid://cm122m6m17c1i" path="res://CircularEffect/Textboxcomplete.png" id="2_aqtl2"]
+[ext_resource type="Shader" uid="uid://b5g1arqra33gm" path="res://CircularEffect/Circular.gdshader" id="3_5pxth"]
+[ext_resource type="FontFile" uid="uid://d3iyjf0embabi" path="res://CircularEffect/goodbyeDespair.ttf" id="4_cif5n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s1fef"]
+shader = ExtResource("3_5pxth")
+shader_parameter/radius = 1000.0
+shader_parameter/speed = 0.5
+shader_parameter/text_width = 1920.0
+shader_parameter/angle_offset_degrees = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aqtl2"]
+shader = ExtResource("3_5pxth")
+shader_parameter/radius = 1000.0
+shader_parameter/speed = 0.5
+shader_parameter/text_width = 1920.0
+shader_parameter/angle_offset_degrees = -70.905
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5pxth"]
+shader = ExtResource("3_5pxth")
+shader_parameter/radius = 1000.0
+shader_parameter/speed = 0.5
+shader_parameter/text_width = 1920.0
+shader_parameter/angle_offset_degrees = -141.66
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cif5n"]
+shader = ExtResource("3_5pxth")
+shader_parameter/radius = 1000.0
+shader_parameter/speed = 0.5
+shader_parameter/text_width = 1920.0
+shader_parameter/angle_offset_degrees = -212.635
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h6i8l"]
+shader = ExtResource("3_5pxth")
+shader_parameter/radius = 1000.0
+shader_parameter/speed = 0.5
+shader_parameter/text_width = 1920.0
+shader_parameter/angle_offset_degrees = -286.11
+
+[node name="Minigame" type="CanvasLayer" unique_id=855698764]
+layer = 20
+script = ExtResource("1_26mrl")
+
+[node name="Label" type="Label" parent="." unique_id=1039591304]
+modulate = Color(1, 1, 1, 0.22745098)
+material = SubResource("ShaderMaterial_s1fef")
+offset_right = 1920.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("4_cif5n")
+theme_override_font_sizes/font_size = 128
+text = "the first murder "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1312631323]
+modulate = Color(1, 1, 1, 0.22745098)
+material = SubResource("ShaderMaterial_aqtl2")
+offset_right = 1920.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("4_cif5n")
+theme_override_font_sizes/font_size = 128
+text = "the first murder "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=4665193]
+modulate = Color(1, 1, 1, 0.22745098)
+material = SubResource("ShaderMaterial_5pxth")
+offset_right = 1920.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("4_cif5n")
+theme_override_font_sizes/font_size = 128
+text = "the first murder "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1490935766]
+modulate = Color(1, 1, 1, 0.22745098)
+material = SubResource("ShaderMaterial_cif5n")
+offset_right = 1920.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("4_cif5n")
+theme_override_font_sizes/font_size = 128
+text = "the first murder "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="." unique_id=2055355725]
+modulate = Color(1, 1, 1, 0.22745098)
+material = SubResource("ShaderMaterial_h6i8l")
+offset_right = 1920.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("4_cif5n")
+theme_override_font_sizes/font_size = 128
+text = "the first murder "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1913604775]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_aqtl2")
