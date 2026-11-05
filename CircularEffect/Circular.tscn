@@ -31,7 +31,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -43,7 +43,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -55,7 +55,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -67,7 +67,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -79,7 +79,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -91,7 +91,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -103,7 +103,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -115,7 +115,7 @@ tracks/7/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -127,7 +127,7 @@ tracks/8/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -139,7 +139,7 @@ tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -151,7 +151,7 @@ tracks/10/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -163,7 +163,7 @@ tracks/11/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -175,7 +175,7 @@ tracks/12/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
@@ -187,7 +187,7 @@ tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
@@ -199,7 +199,7 @@ tracks/14/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
@@ -211,7 +211,7 @@ tracks/15/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
@@ -223,7 +223,7 @@ tracks/16/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
@@ -235,7 +235,7 @@ tracks/17/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
@@ -475,7 +475,7 @@ tracks/37/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [0.0]
 }
 tracks/38/type = "value"
 tracks/38/imported = false
@@ -1143,6 +1143,7 @@ layer = 20
 script = ExtResource("1_26mrl")
 
 [node name="Letras" type="Sprite2D" parent="." unique_id=932748253]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 800)
 scale = Vector2(2.08, 2.08)
 texture = ExtResource("3_letras")
@@ -1150,19 +1151,23 @@ texture = ExtResource("3_letras")
 [node name="Intro" type="Node2D" parent="." unique_id=267193269]
 
 [node name="Rojo" type="Node2D" parent="Intro" unique_id=753218516]
+modulate = Color(1, 1, 1, 0)
 script = ExtResource("17_rojo")
 
 [node name="CirculoGrande" type="Sprite2D" parent="Intro" unique_id=2069420401]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 736)
 scale = Vector2(4.4, 4.4)
 texture = ExtResource("6_cbig2")
 
 [node name="CirculoPunteado" type="Sprite2D" parent="Intro" unique_id=979389808]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 736)
 scale = Vector2(3.7, 3.7)
 texture = ExtResource("7_cbig")
 
 [node name="CirculoArco" type="Sprite2D" parent="Intro" unique_id=432279453]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 736)
 scale = Vector2(2, 2)
 texture = ExtResource("8_circ1")
@@ -1170,76 +1175,90 @@ centered = false
 offset = Vector2(-297, -297)
 
 [node name="CirculoChico" type="Sprite2D" parent="Intro" unique_id=574358148]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 736)
 scale = Vector2(2.2, 2.2)
 texture = ExtResource("9_cdot")
 
 [node name="CirculoChico2" type="Sprite2D" parent="Intro" unique_id=2097131673]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 736)
 scale = Vector2(2.8, 2.8)
 texture = ExtResource("10_cdot2")
 
 [node name="SemiIzq" type="Sprite2D" parent="Intro" unique_id=107508869]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(200, 600)
 scale = Vector2(2, 2)
 texture = ExtResource("11_semi4")
 
 [node name="SemiDer" type="Sprite2D" parent="Intro" unique_id=485935705]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(1720, 600)
 scale = Vector2(2, 2)
 texture = ExtResource("12_semi2")
 
 [node name="SemiArribaIzq" type="Sprite2D" parent="Intro" unique_id=1779681380]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(250, 180)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("13_semi3")
 
 [node name="SemiArribaDer" type="Sprite2D" parent="Intro" unique_id=1518836944]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(1670, 180)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("14_semi1")
 
 [node name="LineaV1" type="Sprite2D" parent="Intro" unique_id=523376799]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(371, 540)
 rotation = 1.5707964
 scale = Vector2(1.15, 1)
 texture = ExtResource("4_line1")
 
 [node name="LineaV2" type="Sprite2D" parent="Intro" unique_id=1735844600]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(1549, 540)
 rotation = 1.5707964
 scale = Vector2(1.15, 1)
 texture = ExtResource("5_line2")
 
 [node name="LineaV3" type="Sprite2D" parent="Intro" unique_id=1428635410]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(53, 540)
 rotation = 1.5707964
 scale = Vector2(1.15, 1)
 texture = ExtResource("4_line1")
 
 [node name="LineaV4" type="Sprite2D" parent="Intro" unique_id=852910130]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(1867, 540)
 rotation = 1.5707964
 scale = Vector2(1.15, 1)
 texture = ExtResource("5_line2")
 
 [node name="LineaH1" type="Sprite2D" parent="Intro" unique_id=1073606319]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 712)
 scale = Vector2(2.05, 1)
 texture = ExtResource("5_line2")
 
 [node name="LineaH2" type="Sprite2D" parent="Intro" unique_id=1120527804]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 797)
 scale = Vector2(2.05, 1)
 texture = ExtResource("4_line1")
 
 [node name="Arco" type="Sprite2D" parent="Intro" unique_id=112581540]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(368, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("15_arch")
 centered = false
 
 [node name="Banda" type="Sprite2D" parent="Intro" unique_id=519967703]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(960, 755)
 scale = Vector2(1.98, 1.7)
 texture = ExtResource("16_label")

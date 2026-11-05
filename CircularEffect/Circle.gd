@@ -3,6 +3,9 @@ extends CanvasLayer
 # HERE YOU CAN START CREATING YOUR MINIGAME
 # WARNING: DO NOT USE OPERATING SYSTEM FUNCTIONS OR HTTP REQUESTS.
 
+# lokwkey i didn't make the speedscale something configurable
+# so thats is your work
+
 var input_Keys : Array = []
 
 var persistent_state : bool = true
@@ -31,8 +34,9 @@ func _ready() -> void:
 	# it wont' destroy the scene after you emit the Player_won signal
 	# useful for HUD things that you want to make it stay
 
+	# even tho i never used this in the interface lol
 	_Speed_apply()
-	_prepare()
+	#_prepare()
 
 
 	#Start_Minigame({})
@@ -41,10 +45,7 @@ func Start_Minigame(param : Dictionary):
 	# Don't declare start_minigame() in _ready
 	# unless you are testing the minigame itself.
 	
-	var actual_balloon = GlobalStates.get_current_balloon()
-	if is_instance_valid(actual_balloon):
-		actual_balloon.tree_exited.connect(_on_tree_exiting)
-	
+	$Letras.visible = true
 	if param.get("toggle", false) == true:
 		_play_intro()
 		anim_letras.play("giro_togglevisibility")
@@ -54,8 +55,10 @@ func Start_Minigame(param : Dictionary):
 
 
 func _prepare() -> void:
+	# i was using this but this is so useless 
+	# idk why i do this in the first place
 	anim_intro.play("intro")
-	anim_intro.seek(0.0, true)
+	anim_intro.seek(0.0, true, true)
 	anim_intro.pause()
 
 func _play_intro() -> void:
@@ -101,6 +104,3 @@ func _exit_tree() -> void:
 		if InputMap.has_action(action):
 			InputMap.erase_action(action)
 	input_Keys.clear()
-
-func _on_tree_exiting():
-	self.queue_free()
