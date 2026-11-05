@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ikqn5ptb2so7" path="res://CircularEffect/editor_interface.gd" id="1_w26cy"]
 [ext_resource type="Texture2D" uid="uid://xmtfl3fewxn3" path="res://iconDanganmake.png" id="2_i30qn"]
+[ext_resource type="FontFile" uid="uid://d3iyjf0embabi" path="res://CircularEffect/goodbyeDespair.ttf" id="2_widmx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpcc3"]
 bg_color = Color(0.09803922, 0.11764706, 0.14901961, 1)
@@ -9,6 +10,9 @@ corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s1fef"]
+bg_color = Color(0.6, 0.92941177, 0.33333334, 0.53333336)
 
 [node name="CMin" type="VBoxContainer" unique_id=710317525]
 anchors_preset = 7
@@ -46,6 +50,15 @@ theme_override_constants/separation = 14
 [node name="Control" type="Control" parent="bg/VBoxContainer" unique_id=1630153864]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
+
+[node name="Button" type="Button" parent="bg/VBoxContainer" unique_id=1284027078]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_widmx")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s1fef")
+toggle_mode = true
+text = "Toggle intro animation: deactivate"
 
 [node name="blank" type="Control" parent="bg/VBoxContainer" unique_id=1896338356]
 custom_minimum_size = Vector2(0, 380)
@@ -88,3 +101,5 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "Cancel"
+
+[connection signal="toggled" from="bg/VBoxContainer/Button" to="." method="_on_button_toggled"]

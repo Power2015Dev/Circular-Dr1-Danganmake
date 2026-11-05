@@ -24,10 +24,10 @@ buses/default_bus_layout="uid://dsns2ia6mch1f"
 
 [autoload]
 
-GlobalSound="*uid://b4g42urk142jt"
-GlobalStates="*uid://cp4f4acntwnd6"
-CharacterList="*uid://dq6yl366jc06i"
-CharacterScript="*uid://op0mc4cxuhui"
+GlobalSound="*uid://c43vb80hpbr3t"
+GlobalStates="*uid://bd1arpx3ltxsj"
+CharacterList="*uid://51elas1bgkhd"
+CharacterScript="*uid://c5huvluu0iitq"
 
 [display]
 
